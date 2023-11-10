@@ -1,0 +1,13 @@
+.*
+!.gitignore
+!.editorconfig
+!.github
+out
+vendor
+
+.idea/
+.vscode/
+
+bin
+obj
+packages
