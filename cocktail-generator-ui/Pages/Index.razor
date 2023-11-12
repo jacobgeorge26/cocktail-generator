@@ -1,0 +1,33 @@
+﻿@page "/"
+@using cocktail_generator_ai.Services
+@using cocktail_generator_db.Models
+@using cocktail_generator_db.Repositories
+@using OpenAI.ObjectModels.SharedModels
+@inject IAiService AiService;
+@inject ICocktailRepository CocktailRepository;
+
+<PageTitle>Home</PageTitle>
+
+<p>Number of cocktails: @_cocktails.Count()</p>
+
+<button onclick="@GetCocktail">Get Cocktail</button>
+<p>@_savedCocktail?.Name</p>
+
+@code{
+    private IEnumerable<ChoiceResponse> _cocktails = null!;
+
+    private Cocktail? _savedCocktail = null!;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _cocktails = await AiService.GetCocktails();
+        await base.OnInitializedAsync();
+    }
+
+    private async Task GetCocktail()
+    {
+        _savedCocktail = await CocktailRepository.GetCocktail("Amaretto Sour");
+        StateHasChanged();
+    }
+
+}

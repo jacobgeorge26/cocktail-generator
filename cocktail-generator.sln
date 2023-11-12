@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cocktail-generator-ui", "cocktail-generator-ui\cocktail-generator-ui.csproj", "{B628863E-4A89-4AC3-B59B-D5ABFBE8CC01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cocktail-generator-ai", "cocktail-generator-ai\cocktail-generator-ai.csproj", "{F464696E-9222-4F74-BA74-EA2FFA8EE64C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cocktail-generator-db", "cocktail-generator-db\cocktail-generator-db.csproj", "{569224C8-4CEF-456E-B0F1-64F918C21ABD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B628863E-4A89-4AC3-B59B-D5ABFBE8CC01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B628863E-4A89-4AC3-B59B-D5ABFBE8CC01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B628863E-4A89-4AC3-B59B-D5ABFBE8CC01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B628863E-4A89-4AC3-B59B-D5ABFBE8CC01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F464696E-9222-4F74-BA74-EA2FFA8EE64C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F464696E-9222-4F74-BA74-EA2FFA8EE64C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F464696E-9222-4F74-BA74-EA2FFA8EE64C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F464696E-9222-4F74-BA74-EA2FFA8EE64C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{569224C8-4CEF-456E-B0F1-64F918C21ABD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{569224C8-4CEF-456E-B0F1-64F918C21ABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{569224C8-4CEF-456E-B0F1-64F918C21ABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{569224C8-4CEF-456E-B0F1-64F918C21ABD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
