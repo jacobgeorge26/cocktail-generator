@@ -1,6 +1,3 @@
-using Cocktails.Configuration;
-using Cocktails.Services;
-
 var builder = WebApplication.CreateBuilder(args);
 
 
