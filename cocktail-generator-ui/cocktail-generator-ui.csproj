@@ -7,4 +7,8 @@
         <RootNamespace>cocktail_generator_ui</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\cocktail-generator-ai\cocktail-generator-ai.csproj" />
+    </ItemGroup>
+
 </Project>

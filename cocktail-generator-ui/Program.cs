@@ -1,9 +1,16 @@
+using cocktail_generator_ai.Configuration;
+using cocktail_generator_ai.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddOptions();
+
+builder.Services.Configure<AiConfig>(builder.Configuration.GetSection(AiConfig.ConfigSection));
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
+builder.Services.AddSingleton<IAiService, AiService>();
 
 var app = builder.Build();
 
