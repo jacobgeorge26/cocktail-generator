@@ -2,8 +2,8 @@
 
 There will be three (initial) stages to the project.
 1. The proof of concept will mainly demonstrate that it is possible to generate cocktail recipes for a specific list of ingredients using OpenAI. The code does not need to be polished; it merely aims to demonstrate that the project is viable and establish a skeleton off which to build.
-2. Version 1.0.0 will cover the MVP of the website. The functionality will be limited, covering only the main goals, but will be polished with good test coverage and seamless deployment.
-3. Version 2.0.0 will add additional functionality to improve the usability of the website. Any tech debt / bugs that have surfaced since the 1.0.0 release should be prioritised.
+2. First release will cover the MVP of the website. The functionality will be limited, covering only the main goals, but will be polished with good test coverage and seamless deployment.
+3. Second release will add additional functionality to improve the usability of the website. Any tech debt / bugs that have surfaced since the 1.0.0 release should be prioritised.
 
 ## PoC
 
@@ -18,7 +18,7 @@ The UI will be basic and allow the user to do the following:
 
 ### AI
 
-The AI service does not need to be effective, but it should:
+The AI service does not need to be effective, but as a starting point it should:
 - Query OpenAI in a structured way using the user input and some default values
 - Validate the response to ensure it does not use any ingredients the user has not specified
 - Return the results as an object
@@ -32,7 +32,7 @@ The database will use EF Core and should allow for cocktail recipes to be saved 
 
 The PoC will be deployed locally only. Options will be used to serve default values provided in appsettings, but these will not be overriden from GitHub Actions just yet. 
 
-## 1.0.0
+## First Release
 
 ### UI
 
@@ -64,11 +64,11 @@ The database should be reworked to minimise duplication and to save recipes by u
 The site should be deployed with CI/CD via GitHub Actions. Secrets should be secured. It would be useful to have both a staging and production instance of the site.
 There should be thorough test coverage (TDD - do not leave it to the end!). Provide documentation covering the structure of the code and how to get started with local development.
 
-### 2.0.0
+### Second Release
 
 ### UI
 
-Feedback should be gathered from 1.0.0 to identify any improvements that could be made to the UI flow / design.
+Feedback should be gathered from the first release to identify any improvements that could be made to the UI flow / design.
 
 Feature additions may include adding a payment option (to contribute to OpenAI costs), displaying 'site favourites', and providing a mechanism for submitting feedback.
 For the latter, it would be useful to batch the submissions when received on the dev end (Pub/Sub?) and the possibility of spam should be considered.
