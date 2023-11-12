@@ -1,5 +1,6 @@
 using cocktail_generator_ai.Configuration;
 using cocktail_generator_ai.Services;
+using cocktail_generator_db.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +12,7 @@ builder.Services.Configure<AiConfig>(builder.Configuration.GetSection(AiConfig.C
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<IAiService, AiService>();
+builder.Services.AddSingleton<ICocktailRepository, CocktailRepository>();
 
 var app = builder.Build();
 

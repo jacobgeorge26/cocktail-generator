@@ -9,6 +9,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\cocktail-generator-ai\cocktail-generator-ai.csproj" />
+      <ProjectReference Include="..\cocktail-generator-db\cocktail-generator-db.csproj" />
     </ItemGroup>
 
 </Project>
